@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #000000, #a9dbfd);
+  color: #fff;
+  position: relative;
+}
+.nav__logo{
+  text-decoration: none;
+  font-size: 40px;
+  color: #f2bf22;
+  text-align: left;
+  padding-left: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lato;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 15vh;
+  width: 90%;
+  margin: auto;
+}
+.menu__icon{
+  width: 30px;
+  cursor: pointer;
+  margin-left: 40px;
+  color: #fff;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 2px;
+}
+nav ul li a:hover{
+  color: #f2bf22;
+}
+.row{
+  width: 80%;
+  height: 85vh;
+  flex-wrap: wrap;
+  display: flex;
+  margin: auto;
+}
+.col{
+  margin: 20px 0;
+  flex-basis: 50%;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+}
+.text__box{
+  max-width: 400px;
+  margin-top: 100px;
+}
+.text__box h5{
+  color: #f2bf22;
+}
+.text__box h1{
+  letter-spacing: 3px;
+  font-size: 40px;
+  font-weight: 100px;
+  font-family: lato;
+  line-height: 65px;
+}
+.gallery__box{
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+  max-height: 300px;
+}
+.gallery__box img{
+  max-width: 100%;
+  border: 10px solid rgba(333, 333, 333, 0.4);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  box-shadow: 10px;
+
+}
+.slideshow-container img {
+  max-width: 100%;
+  border: 10px solid rgba(333, 333, 333, 0.4);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.mySlides {
+/*  display: none;*/
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #f2bf22;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.element1{
+  background-color: #090977;
+  clip-path: polygon(0 53%, 100% 53%, 100% 100%, 54% 100%);
+  z-index: 111;
+  float: left;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: 440px;
+  top: 10px;
+  transition: 1s;
+
+}
+.element1:hover{
+  background-color: #f26a2e;
+  transform: rotate(40deg);
+}
+.element2{
+  background-color: #f26a2e;
+  clip-path: polygon(0 76%, 100% 89%, 100% 100%, 0 100%);
+  z-index: 112;
+  float: left;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  left: 80px;
+  top: 360px;
+  transform: rotate(20deg);
+  transition: 1s;
+}
+.element2:hover{
+  background-color: #12b16e;
+  transform: rotate(70deg);
+}
+
+.element3{
+  background-color: #12b16e;
+  clip-path: polygon(26% 21%, 35% 88%, 16% 100%, 6% 54%, 14% 21%);
+  z-index: 112;
+  float: left;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  right: -120px;
+  top: 60px;
+  transition: 1s;
+}
+.element3:hover{
+  background-color: #e74c16;
+  transform: rotate(30deg);
+}
+.element4{
+  background-color: #e74c16;
+  clip-path: polygon(42% 51%, 54% 0, 86% 0, 84% 88%, 24% 88%, 21% 52%);
+  z-index: 112;
+  float: left;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left:  500px;
+  top: 400px;
+  transform: rotate(20deg);
+  transition:  1s;
+}
+.element4:hover{
+  background-color: #d32c23;
+  transform: rotate(80deg);
+}
+
+.element5{
+  background-color: #d32c23;
+  clip-path: circle(50% at 50% 50%);
+  z-index: 112;
+  float: left;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right:  80px;
+  top: 480px;
+  transition: 1s;
+}
+.element5:hover{
+  background-color: #090977;
+  transform: rotate(80deg);
+  width: 170px;
+  height: 170px;
+}
+
+/*   section about */
+
+.container__about {
+  background-image: url("imgs/covid1.jpg");
+
+  height: 550px;
+
+/*parallax css */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.about .text__box h5 {
+  font-size: 20px;
+  text-align: left;
+  line-height: 50px;
+  font-weight: bold;
+
+}
+.about .text__box p{
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 50px;
+  font-family: Poppins;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+
+}
+.fb__photo{
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  box-shadow: 10px;
+
+}
+.fb__photo img{
+  max-width: 100%;
+  border: 10px solid rgba(333, 333, 333, 0.4);
+  border-radius: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  margin-top: 90px;
+}
+.about .col h5{
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #090977;
+  margin-top: 40px;
+  font-style: oblique;
+  font-weight: bold;
+}
+.about .col h6{
+  font-size: 40px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: #090977;
+  margin-top: 10px;
+  font-style: oblique;
+  letter-spacing: 4px;
+}
+.button{
+  display: inline-block;
+  background-color: #e74c16;
+  color: #000;
+  padding: 50px 10px;
+  border-radius: 30px;
+  transition: .5s;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 50px;
+  }
+.button:hover{
+  background-color: #f2bf22;
+}
+.btn{
+  display: inline-block;
+  background-color: #e74c16;
+}
+.footer{
+  height: 400px;
+  background: #303036;
+  color: #d3d3d3;
+  position: relative;
+}
+.footer .footer__bottom{
+  background: #303036;
+  color:#000;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+.footer .footer__content{
+  height: 300px;
+  display: flex;
+}
+.footer .footer__content .footer__section{
+  flex: 1;
+  padding: 25px;
+
+}
+
+.footer .footer__content h1,
+.footer .footer__content h2{
+  color: white;
+}
+.footer .footer__content .about h1 span{
+  color:  #f2bf22;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lato;
+  font-weight: 300;
+}
+.footer .footer__content .about p{
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: cursive;
+}
+ .footer .footer__content .contact span{
+   color: white;
+   font-weight: 300;
+   font-size: 15px;
+   font-family: cursive;
+   text-align: right;
+}
+.footer .footer__content .footer__section .footer__social  i{
+  border: 1px solid gray;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 35px;
+  border-radius: 5px;
+  color: grey;
+  justify-content: center;
+  text-decoration: none;
+  transition: 1s;
+}
+.footer .footer__content .footer__section .footer__social i:hover{
+  color: white;
+  border: 1px solid white;
+}
+.footer .footer__content .footer__section  h2{
+  color: gray;
+  font-size: 30px;
+  text-decoration: none;
+  transition: 1s;
+}
+.footer .footer__content .footer__section  h2:hover{
+  color: #f2bf22;
+
+
+}
+.footer .footer__content .footer__section ul li {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: gray;
+  text-decoration: none;
+  text-align: left;
+}
+.footer .footer__content .footer__section ul li:hover {
+  color: #f2bf22;
+  margin-left: 20px;
+  transition: 1s;
+}
+.footer .footer__content .contact-form .contact-input{
+  background: #272727;
+  color:white;
+  margin-bottom: 10px;
+  line-height: 15px;
+  padding: 10px 10px;
+  border: none;
+  width: 380px;
+  height: auto;
+}
+
+  /*footer
+footer__section contact-form
+  .footer__content{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  .footer__logo{
+    font-size: 40px;
+    color: #f2bf22;
+    font-weight: 600;
+    text-decoration: none;
+
+  }
+  .footer__description{
+    display: block;
+    font-size: 10px;
+    margin: 5px 0 20px;
+    text-decoration: none;
+  }
+  .footer__social{
+    font-size:20px;
+    color: #fff;
+    margin-right: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__social i{
+    font-size: 15px;
+    color:#fff;
+    margin-right: 20px;
+
+  }
+
+  .footer__title{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+
+  }
+  .footer__title ul li a{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    row-gap: 4px;
+    text-decoration: none;
+
+  }
+  .footer__link{
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    }
+  .footer__link:hover{
+    color: #000;
+  }
+  .footer__link ul li a{
+    list-style-type: none;
+  }
+  .footer__copy{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+/*
+
+.gallery__box ul{
+  position: absolute;
+  right: -100px;
+  top: 50%;
+}
+.gallery__box ul li{
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.gallery__box .active{
+  color: #f2bf22;
+}
+.gallery__box ul li::after{
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: transparent;
+  position: absolute;
+  top: 8px;
+  left: -5px;
+}
+.gallery__box .active::after{
+  background: #f2bf22;
+}
